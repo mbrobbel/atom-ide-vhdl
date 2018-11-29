@@ -1,0 +1,64 @@
+{
+  "name": "ide-vhdl",
+  "main": "./lib/main",
+  "version": "0.1.0",
+  "description": "VHDL language support for Atom",
+  "keywords": [
+    "vhdl",
+    "ide",
+    "language server",
+    "vhdl_ls"
+  ],
+  "configSchema": {
+    "vhdlLanguageServer": {
+      "title": "VHDL language server",
+      "type": "object",
+      "properties": {
+        "command": {
+          "type": "string",
+          "default": "binary",
+          "enum": [
+            {
+              "value": "binary",
+              "description": "Run the language server binary."
+            },
+            {
+              "value": "docker",
+              "description": "Run the language server in a docker container."
+            }
+          ]
+        },
+        "path": {
+          "title": "VHDL language server path",
+          "type": "string",
+          "default": "~/.cargo/bin/vhdl_ls",
+          "description": "Path to the VHDL language server"
+        }
+      }
+    }
+  },
+  "package-deps": [
+    "language-vhdl",
+    "atom-ide-ui"
+  ],
+  "enhancedScopes": [
+    "source.vhdl",
+    "source.vhd"
+  ],
+  "consumedServices": {
+    "linter-indie": {
+      "versions": {
+        "2.0.0": "consumeLinterV2"
+      }
+    }
+  },
+  "repository": "https://github.com/mbrobbel/atom-ide-vhdl",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.21.0 <2.0.0"
+  },
+  "dependencies": {
+    "atom-languageclient": "^0.9.8",
+    "atom-package-deps": "^4.6.2"
+  }
+}
