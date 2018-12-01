@@ -1,5 +1,7 @@
 # ide-vhdl package for Atom
 
+[Atom package](https://atom.io/packages/ide-vhdl)
+
 VHDL language support for [Atom](https://atom.io/) using the language server from [kraigher/rust_hdl](https://github.com/kraigher/rust_hdl#vhdl-language-server).
 
 ## Usage
