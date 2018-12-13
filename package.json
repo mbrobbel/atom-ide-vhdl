@@ -32,7 +32,13 @@
           "title": "VHDL language server path",
           "type": "string",
           "default": "~/.cargo/bin/vhdl_ls",
-          "description": "Path to the VHDL language server"
+          "description": "Path to the VHDL language server."
+        },
+        "debug": {
+          "title": "Debug VHDL language server output",
+          "type": "boolean",
+          "default": false,
+          "description": "Log debug output of the lanaguage server to the dev tools console."
         }
       }
     }
