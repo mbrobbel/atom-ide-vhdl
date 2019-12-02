@@ -38,7 +38,7 @@
           "title": "Debug VHDL language server output",
           "type": "boolean",
           "default": false,
-          "description": "Log debug output of the lanaguage server to the dev tools console."
+          "description": "Log debug output of the language server to the dev tools console."
         }
       }
     }
